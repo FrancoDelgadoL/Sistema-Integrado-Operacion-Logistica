@@ -21,7 +21,7 @@ Pasos:
    cd nombre-del-proyecto
 
 3. Cambiar a la rama develop:
-   git checkout develop
+   git checkout ramadesarollo
 
 4. Crear una rama para su funcionalidad:
    git checkout -b feature/nombre-funcionalidad
@@ -38,7 +38,7 @@ git add .
 git commit -m "feat: agregar seguimiento gps"  
 git push -u origin feature/seguimiento-gps  
 
-## Integración a develop
+## Integración a ramadesarollo
 
 Una vez terminada la funcionalidad, se debe integrar a la rama develop.
 
@@ -50,7 +50,7 @@ Pasos en GitHub:
 2. Ir a la pestaña "Pull requests"
 3. Hacer clic en "New pull request"
 4. Seleccionar:
-   - Base: develop
+   - Base: ramadesarollo
    - Compare: feature/nombre-funcionalidad
 5. Hacer clic en "Create pull request"
 6. Agregar título y descripción
@@ -59,7 +59,7 @@ Pasos en GitHub:
 
 ### Opción manual
 
-git checkout develop  
+git checkout ramadesarollo  
 git merge feature/seguimiento-gps  
 git push  
 
@@ -71,7 +71,7 @@ git push
 - Mantener la rama actualizada antes del merge:
 
 git checkout feature/nombre-funcionalidad  
-git pull origin develop  
+git pull origin ramadesarollo  
 
 ## Preparación de versiones (release)
 
@@ -90,7 +90,7 @@ git push
 
 Luego se integra también a develop:
 
-git checkout develop  
+git checkout ramadesarollo  
 git merge release/v1.0  
 
 ## Correcciones urgentes (hotfix)
@@ -110,7 +110,7 @@ git checkout main
 git merge hotfix/error  
 git push  
 
-Y también a develop:
+Y también a ramadesarollo:
 git checkout develop  
 git merge hotfix/error  
 
