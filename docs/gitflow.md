@@ -10,7 +10,7 @@ Este proyecto utiliza GitFlow para organizar el desarrollo en Git.
 
 ## Forma de trabajo del equipo
 
-Todos los integrantes deben trabajar a partir de la rama develop.
+Todos los integrantes deben trabajar a partir de la rama ramadesarollo.
 
 Pasos:
 
