@@ -6,7 +6,7 @@ export default function BackendStatus() {
   );
 
   useEffect(() => {
-    fetch("http://localhost:8000/")
+    fetch("https://api-logistica-backend.onrender.com")
       .then((respuesta) => respuesta.json())
       .then((datos) => {
         setMensajeBackend(datos.mensaje);
